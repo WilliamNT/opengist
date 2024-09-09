@@ -17,8 +17,8 @@ gist.header.clone-http: "Clone-ozás ezzel: %s"
 gist.header.clone-http-help: Clone-ozás Git HTTP basic hitelesítéssel.
 gist.header.clone-ssh: Clone-ozás SSH-n keresztül
 gist.header.clone-ssh-help: Clone-ozás SSH kulccsal
-gist.header.embed: ''
-gist.header.embed-help: ''
+gist.header.embed: Beágyazás
+gist.header.embed-help: Ágyazd be ezt a gistet a weboldaladon.
 gist.header.download-zip: ZIP archívum letöltése
 
 gist.raw: Eredeti
@@ -186,8 +186,8 @@ admin.disable-login: Bejelentkezés űrlap letiltása
 admin.disable-login_help: Letiltja a bejelentkezés űrlapon keresztüli bejelentkezéseket, OAuth szolgáltatókat ajánlva helyette.
 admin.disable-gravatar: Gravatar kikapcsolása
 admin.disable-gravatar_help: Tiltsd le a Gravatar-t mint profilkép szolgáltató.
-admin.allow-gists-without-login:
-admin.allow-gists-without-login_help:
+admin.allow-gists-without-login: Egyéni gistek megtekintésének engedélyezése bejelentkezés nélkül
+admin.allow-gists-without-login_help: Egyéni gistek megtekintésének engedélyezése bejelentkezés nélkül, de a kilistázásuk ne igényeljen bejelentkezést
 admin.users.delete_confirm: Biztosan törlöd ezt a felhasználót?
 
 admin.gists.title: Cím
@@ -195,66 +195,66 @@ admin.gists.private: Privát ?
 admin.gists.nb-files: Fájlok száma
 admin.gists.nb-likes: Kedv. száma
 admin.gists.delete_confirm: Biztosan törlöd a gistet?
-gist.new.preview: ''
-gist.new.create-a-new-gist: ''
-gist.edit.edit-gist: ''
-gist.list.all-liked-by: ''
-gist.list.all-forked-by: ''
-gist.list.all-from: ''
-gist.forks.for: ''
-gist.likes.for: ''
-gist.revision-of: ''
-error.page-not-found: ''
-error.bad-request: ''
-error.signup-disabled: ''
-error.signup-disabled-form: ''
-error.login-disabled-form: ''
-error.complete-oauth-login: ''
-error.oauth-unsupported: ''
-error.cannot-bind-data: ''
-error.invalid-number: ''
-error.invalid-character-unescaped: ''
-admin.invitations: ''
-admin.invitations.create: ''
-admin.invitations.help: ''
-admin.invitations.max_uses: ''
-admin.invitations.expires_at: ''
-admin.invitations.code: ''
-admin.invitations.copy_link: ''
-admin.invitations.uses: ''
-admin.invitations.expired: ''
-flash.admin.user-deleted: ''
-flash.admin.gist-deleted: ''
-flash.admin.invitation-created: ''
-flash.admin.invitation-deleted: ''
-flash.admin.sync-fs: ''
-flash.admin.sync-db: ''
-flash.admin.git-gc: ''
-flash.admin.sync-previews: ''
-flash.admin.reset-hooks: ''
-flash.admin.index-gists: ''
-flash.auth.username-exists: ''
-flash.auth.invalid-credentials: ''
-flash.auth.account-linked-oauth: ''
-flash.auth.account-unlinked-oauth: ''
-flash.auth.user-sshkeys-not-retrievable: ''
-flash.auth.user-sshkeys-not-created: ''
-flash.auth.must-be-logged-in: ''
-flash.gist.visibility-changed: ''
-flash.gist.deleted: ''
-flash.gist.fork-own-gist: ''
-flash.gist.forked: ''
-flash.user.email-updated: ''
-flash.user.invalid-ssh-key: ''
-flash.user.ssh-key-added: ''
-flash.user.ssh-key-deleted: ''
-flash.user.password-updated: ''
-flash.user.username-updated: ''
-validation.is-too-long: ''
-validation.should-not-be-empty: ''
-validation.should-not-include-sub-directory: ''
-validation.should-only-contain-alphanumeric-characters: ''
-validation.should-only-contain-alphanumeric-characters-and-dashes: ''
-validation.not-enough: ''
-validation.invalid: ''
-html.title.admin-panel: ''
+gist.new.preview: Előnézet
+gist.new.create-a-new-gist: Új gist létrehozása
+gist.edit.edit-gist: "Szerkesztés: %s"
+gist.list.all-liked-by: %s által kedvelt gistek
+gist.list.all-forked-by: %s által forkolt gistek
+gist.list.all-from: %s összes gistje
+gist.forks.for: %s forkjai
+gist.likes.for: %s kedvelései
+gist.revision-of: %s revíziója
+error.page-not-found: Az oldal nem található
+error.bad-request: Hibás kérés (Bad request)
+error.signup-disabled: A regisztrációk ki vannak kapcsolva
+error.signup-disabled-form: A regisztrációs űrlapon keresztüli regisztráció ki van kapcsolva
+error.login-disabled-form: A bejelentkezési űrlapon keresztüli bejelentkezés ki van kapcsolva
+error.complete-oauth-login: "Az OAuth autentikáció sikertelen volt: %s"
+error.oauth-unsupported: Nem támogatott szolgáltató
+error.cannot-bind-data: Nem sikerült az adat összeköttetése
+error.invalid-number: Érvénytelen szám
+error.invalid-character-unescaped: Érvénytelen karakter (unescaped)
+admin.invitations: Meghívók
+admin.invitations.create: Meghívó létrehozása
+admin.invitations.help: A meghívókkal akkor is létrehozhatóak fiókok, ha a regisztrációk ki vannak kapcsolva.
+admin.invitations.max_uses: Felhasználási korlát
+admin.invitations.expires_at: Lejárat
+admin.invitations.code: Kód
+admin.invitations.copy_link: Link vágólapra másolása
+admin.invitations.uses: Felhasználások
+admin.invitations.expired: Lejárt
+flash.admin.user-deleted: A felhasználó törlésre került
+flash.admin.gist-deleted: A gist törlésre került
+flash.admin.invitation-created: Meghívó létrehozva
+flash.admin.invitation-deleted: Meghívó törölve
+flash.admin.sync-fs: A repository-k szinkronizálása a fájlrendszerrel folyamatban...
+flash.admin.sync-db: A repository-k szinkronizálása az adatbázissal folyamatban...
+flash.admin.git-gc: A repository-k garbage collection-je folyamatban...
+flash.admin.sync-previews: Előnézetek szinkronizálása folyamatban...
+flash.admin.reset-hooks: Gist szerver hook-ok visszaállítása minden repository esetében folyamatban...
+flash.admin.index-gists: Gistek indexelése folyamatban...
+flash.auth.username-exists: A felhasználónév már használatban van
+flash.auth.invalid-credentials: Érvénytelen adatok
+flash.auth.account-linked-oauth: "Felhasználó hozzácsatolva a következőhöz: %s"
+flash.auth.account-unlinked-oauth: "Felhasználó lecsatlakoztatva a következőtől: %s"
+flash.auth.user-sshkeys-not-retrievable: Nem sikerült a felhasználói kulcsok megszerzése
+flash.auth.user-sshkeys-not-created: Nem sikerült az SSH kulcs létrehozása
+flash.auth.must-be-logged-in: A gistek megtekintéséhez be kell jelentkezned
+flash.gist.visibility-changed: A gist láthatósága módosult
+flash.gist.deleted: A gist törlésre került
+flash.gist.fork-own-gist: Nem sikerült a saját gisted forkolása
+flash.gist.forked: Gist sikeresen forkolva
+flash.user.email-updated: Email frissítve
+flash.user.invalid-ssh-key: Érvénytelen SSH kulcs
+flash.user.ssh-key-added: SSH kulcs hozzáadva
+flash.user.ssh-key-deleted: SSH kulcs törölve
+flash.user.password-updated: Jelszó frissítve
+flash.user.username-updated: Felhasználónév frissítve
+validation.is-too-long: A(z) %s értéke túl hosszú
+validation.should-not-be-empty: A(z) %s nem lehet üres
+validation.should-not-include-sub-directory: A(z) %s nem tartalmazhat alkönyvtárat
+validation.should-only-contain-alphanumeric-characters: A(z) %s kizárólag alfanumerikus karaktereket tartalmazhat
+validation.should-only-contain-alphanumeric-characters-and-dashes: A(z) %s kizárólag alfanumerikus karaktereket és kötőjelet tartalmazhat
+validation.not-enough: Nincs/nem elég %s
+validation.invalid: Érvénytelen %s
+html.title.admin-panel: Admin felület
